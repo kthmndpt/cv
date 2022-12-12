@@ -80,7 +80,7 @@ class _SecondRouteState extends State<SecondRoute> {
                                 decoration: InputDecoration(
                                     hintText: "Email",
                                     border: OutlineInputBorder()),
-                                     autovalidateMode: AutovalidateMode.onUserInteraction,
+                                    autovalidateMode: AutovalidateMode.onUserInteraction,
                                 validator: (value) {
                                   if (RegExp(emailRegex).hasMatch(value!)) {
                                   } else if (value == null || value.isEmpty) {
@@ -99,7 +99,7 @@ class _SecondRouteState extends State<SecondRoute> {
                                 decoration: InputDecoration(
                                     hintText: "Password",
                                     border: OutlineInputBorder()),
-                                     autovalidateMode: AutovalidateMode.onUserInteraction,
+                                    autovalidateMode: AutovalidateMode.onUserInteraction,
                                 validator: (value) {
                                   if (value == null || value.isEmpty) {
                                     return "Field cannot be empty";
@@ -135,7 +135,7 @@ class _SecondRouteState extends State<SecondRoute> {
                                       return null;
                                     }
                                   },
-                                  color: Color.fromARGB(255, 116, 41, 255),
+                                  color: Colors.greenAccent[400],
                                   shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(40)),
                                   child: Text(
